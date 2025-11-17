@@ -23,6 +23,7 @@ from .helpers import (
     safe_divide,
     calculate_fees,
 )
+from .telegram_bot import telegram, TelegramNotifier
 
 __all__ = [
     # Logger
@@ -51,4 +52,7 @@ __all__ = [
     "validate_symbol",
     "safe_divide",
     "calculate_fees",
+    # Telegram
+    "telegram",
+    "TelegramNotifier",
 ]
