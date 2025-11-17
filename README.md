@@ -4,50 +4,57 @@ Automated cryptocurrency trading bot with machine learning predictions, sentimen
 
 ## Features
 
+### ✅ IMPLEMENTED (Phase 1-3)
 - ✅ **Real-time Data Collection**: Binance WebSocket integration for live market data
-- ✅ **Sentiment Analysis**: Twitter, Reddit, and news sentiment tracking
-- ✅ **Technical Indicators**: 50+ technical indicators (RSI, MACD, Bollinger Bands, etc.)
-- ✅ **Machine Learning**: Classical ML (XGBoost, Random Forest) + Deep Learning (LSTM, Transformer)
-- ✅ **Ensemble Predictions**: Combine multiple models for better accuracy
-- ✅ **Risk Management**: Dynamic position sizing, stop-loss, take-profit
-- ✅ **Backtesting**: Historical strategy testing
-- ✅ **Paper Trading**: Test strategies without real money
-- ✅ **Live Trading**: Automated trading on Binance
-- ✅ **Monitoring Dashboard**: Real-time performance tracking
-- ✅ **Telegram Alerts**: Get notified of trades and system status
+- ✅ **Technical Indicators**: 50+ technical indicators (RSI, MACD, Bollinger Bands, ATR, etc.)
+- ✅ **Machine Learning**: XGBoost price classifier with confidence scoring
+- ✅ **Risk Management**: Kelly Criterion position sizing, dynamic stop-loss/take-profit
+- ✅ **Signal Generation**: Multi-strategy ensemble (Technical + Trend + Mean Reversion + Momentum)
+- ✅ **Paper Trading**: Fully functional simulated trading
+- ✅ **Live Trading**: Real order execution on Binance with safety checks
+- ✅ **Monitoring Dashboard**: Streamlit dashboard with real-time metrics
+- ✅ **Telegram Alerts**: Full integration for trade notifications, signals, errors, heartbeats
+- ✅ **Database**: Complete data models for OHLCV, trades, predictions, performance
+- ✅ **Automated Trading**: End-to-end pipeline from data → signal → execution → monitoring
 
-## Quick Start
+### ⏳ TODO (Phase 4+)
+- ⏳ **Sentiment Analysis**: Twitter, Reddit, news sentiment tracking (models ready, API integration pending)
+- ⏳ **Deep Learning**: LSTM, GRU, Transformer models for advanced predictions
+- ⏳ **Backtesting Framework**: Comprehensive historical strategy testing
+- ⏳ **Advanced Ensemble**: Combine XGBoost + LSTM + Sentiment for ultimate predictions
+
+## 🚀 Quick Start
+
+**👉 See [QUICKSTART.md](QUICKSTART.md) for detailed 5-minute setup guide!**
+
+### Super Quick (TL;DR)
+
+```bash
+# 1. Install
+python -m venv venv
+venv\Scripts\activate  # Windows
+pip install -r requirements.txt
+
+# 2. Configure (edit .env with your Binance API keys)
+notepad .env
+
+# 3. Initialize
+python scripts/init_db.py
+python scripts/download_data.py --days 7
+
+# 4. Run Paper Trading
+python main_enhanced.py --mode paper
+
+# 5. View Dashboard (optional, in new terminal)
+streamlit run src/dashboard/app.py
+```
 
 ### Prerequisites
 
-- Python 3.10+
-- Binance API keys (for live trading)
-- NVIDIA GPU (optional, for faster model training)
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/your-username/coin_pred.git
-cd coin_pred
-```
-
-2. Create virtual environment:
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-4. Configure environment:
-```bash
-cp .env.example .env
-# Edit .env with your API keys
-```
+- **Python 3.10+** (3.11 recommended)
+- **Binance API keys** ([Testnet](https://testnet.binance.vision/) for practice)
+- **16GB+ RAM** (8GB minimum)
+- **NVIDIA GPU** (optional, for model training - auto-detected)
 
 5. Initialize database:
 ```bash
