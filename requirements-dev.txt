@@ -1,0 +1,9 @@
+# Development dependencies
+-r requirements.txt
+
+# Additional dev tools
+ipdb==0.13.13
+pytest-xdist==3.5.0
+pytest-benchmark==4.0.0
+memory-profiler==0.61.0
+line-profiler==4.1.1
