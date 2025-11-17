@@ -223,6 +223,53 @@ GitHub Actions runs:
 - Tests on Python 3.10, 3.11, 3.12
 - Security vulnerability scans
 
+---
+
+## 📚 Complete Documentation
+
+### Quick Start Guides
+- **[QUICKSTART.md](QUICKSTART.md)** - 5-minute setup guide
+- **[GUI_GUIDE.md](GUI_GUIDE.md)** - Desktop application user guide
+- **[GUIDE.md](GUIDE.md)** - Comprehensive user manual (500+ lines)
+- **[OPTIMIZATIONS.md](OPTIMIZATIONS.md)** - V2 improvements & 2024 best practices
+
+### 📖 Technical Report (For Developers)
+
+**Complete technical documentation in [`technical_report/`](./technical_report/)**
+
+| Document | Description | For |
+|----------|-------------|-----|
+| **[1. System Architecture](./technical_report/01_system_architecture.md)** | High-level design, layers, tech stack, patterns | Everyone |
+| **[2. Data Flow](./technical_report/02_data_flow.md)** | Data pipeline from collection to execution | Developers, Debuggers |
+| **[3. File Structure](./technical_report/03_file_structure.md)** | Every file explained with purpose | New developers |
+| **[4. Core Components](./technical_report/04_core_components.md)** | Deep dive into modules & APIs | Contributors |
+| **[5. Trading Flow](./technical_report/05_trading_flow.md)** | Trading workflow & business logic | Algorithm developers |
+| **[6. GUI Architecture](./technical_report/06_gui_architecture.md)** | Desktop app design & PyQt5 | UI developers |
+| **[7. Deployment Guide](./technical_report/07_deployment.md)** | Production setup & maintenance | DevOps, Production |
+
+**🎯 Reading Guide:**
+
+**New to project?**
+1. [QUICKSTART.md](./QUICKSTART.md) → Get it running
+2. [System Architecture](./technical_report/01_system_architecture.md) → Understand design
+3. [File Structure](./technical_report/03_file_structure.md) → Find code
+4. [Core Components](./technical_report/04_core_components.md) → Deep dive
+
+**Contributing code?**
+- [Core Components](./technical_report/04_core_components.md) - Component APIs
+- [Trading Flow](./technical_report/05_trading_flow.md) - Business logic
+- [Data Flow](./technical_report/02_data_flow.md) - Data pipeline
+
+**Deploying?**
+- [Deployment Guide](./technical_report/07_deployment.md) - Complete guide
+
+**Debugging?**
+- [Data Flow](./technical_report/02_data_flow.md) - Trace data
+- [Trading Flow](./technical_report/05_trading_flow.md) - Trace logic
+- Logs in `logs/` directory
+
+---
+
 ## Contributing
 
 Contributions are welcome! Please:
