@@ -25,6 +25,36 @@ Automated cryptocurrency trading bot with machine learning predictions, sentimen
 
 ## 🚀 Quick Start
 
+### 🖥️ NEW: Desktop Application (RECOMMENDED!)
+
+**Professional desktop app with real-time monitoring:**
+
+```bash
+# Windows
+start_gui.bat
+
+# Linux/Mac
+./start_gui.sh
+
+# Or manually
+python main_gui.py
+```
+
+**Features:**
+- 📊 Real-time price monitoring (auto-refresh every 2s)
+- 🤖 One-click bot control (Start/Stop)
+- 📈 Live position tracking with unrealized P/L
+- 📜 Trade history with filtering & CSV export
+- 📉 Interactive candlestick charts
+- ⚡ Non-blocking UI (no lag/freeze)
+- 🎨 Professional UI with color coding
+
+**👉 See [GUI_GUIDE.md](GUI_GUIDE.md) for complete desktop app documentation!**
+
+---
+
+### 📊 Web Dashboard (Alternative)
+
 **👉 See [QUICKSTART.md](QUICKSTART.md) for detailed 5-minute setup guide!**
 
 ### Super Quick (TL;DR)
